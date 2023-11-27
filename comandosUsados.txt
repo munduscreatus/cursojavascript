@@ -1,0 +1,66 @@
+Curso JavaScript Guatavo Guanabara
+
+Video #05
+Tipos primitivos em js: boolean, string, numeric, object, null, funtion, typeof
+
+Quando queremos saber o tipo de uma variavel usamos o comando typeof e a variavel.
+Ex.:
+
+  (recebe)
+      |
+var n = 6;
+
+typeof n
+number
+
+
+var n = "6"
+
+typeof n
+string
+
+Video #06 Manipulaçao de dados
+
+Questionario inicial
+1-O que é uma variavel?
+	Espaço reservado da memoria usada para armazenar um determinado tipo de dado
+2-Como declarar uma variavel numerica Inteira ou Real em JS?
+	var n1 = 1;		var n2 = 1,5
+3-Quais sao os tipos primitivos em JS?
+	number, boolean, string, null, object, function, NaN, undefined
+4-O que sinifica colocar o valor null dentro de uma variavel?
+	null atribui o valor nulo a variavel, deixa ela vazia.
+
+
+Quando trabalhamos com entrada de dados usando prompt, por padrao a entrada é uma s
+tring, caso necessario faremos a conversao; temos varias formas de faze-lo.
+	Uma delas é da seguinte forma: 
+		Uso do parseInt/ parseFloat
+	var n1 = Number.parseInt(window.prompt('Digite um numero: '));
+
+	OU
+		Uso do Number apenas
+	var n2 = Number(window.prompt('Digite outro numero: '));
+
+var s = n1 + n2;
+window.alert('A soma dos valores é: ' + s);
+
+Tambem podemos fazer o inverso caso nescessaario. Tratar um numero cmo string
+
+	String(n)
+	n.toString()
+window.alert('A soma dos valores é: ' + String(s) ou s.toString);
+
+
+Formatando Strings
+var s = 'JAVASCRIPT'
+'Eu estou aprendendo s' //nao faz a interpolaçao
+'Eu estou aprendendo' + s  //usa a concatençao
+
+Podemos tambem usar o template de strings ` ${s} ` usamos a crase e o placeHolder
+`Eu estou aprendendo ${s}`
+
+nome = 'Wellington' idade = 39 nota = 7,5
+'O aluno ' + nome + ' com ' + idade + 'anos tirou a nota ' + nota //padrao
+` O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+

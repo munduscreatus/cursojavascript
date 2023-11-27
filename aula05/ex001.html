@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Curso Javascript</title>
     <style>
         body{
             background-color: rgb(148, 148, 214);
@@ -20,12 +20,15 @@
 </head>
 <body>
     <script>
+        //exibe uma mensagem de alerta
         window.alert('Minha primeira mensagem!');
+        //exibe uma mensagem de confirmaçao sim/nao
         window.confirm('Está gostando de javascript?');
+        //exibe uma mensagem com entrada de texto do usuario
         var entradaUsuarioNome = window.prompt('Qual é o seu nome?');
-
+        //insere o valor obtido no body do HTML(nao recomendado)
+        document.body.innerHTML = "<h1>Olá, " + entradaUsuarioNome + "</h1>";
     </script>
-<h1>Ola, Usuario</h1>
 
 <p>Ja me livrei da maldiçao</p>
 
