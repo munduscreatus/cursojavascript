@@ -53,7 +53,7 @@ window.alert('A soma dos valores é: ' + String(s) ou s.toString);
 
 
 Formatando Strings
-var s = 'JAVASCRIPT'
+var s = 'JavaScript'
 'Eu estou aprendendo s' //nao faz a interpolaçao
 'Eu estou aprendendo' + s  //usa a concatençao
 
@@ -63,4 +63,17 @@ Podemos tambem usar o template de strings ` ${s} ` usamos a crase e o placeHolde
 nome = 'Wellington' idade = 39 nota = 7,5
 'O aluno ' + nome + ' com ' + idade + 'anos tirou a nota ' + nota //padrao
 ` O aluno ${nome} com ${idade} anos tirou a nota ${nota}`
+s.length	//quantos caracteres a string tem
+s.toUpperCase() //tudo para maiusculas
+s.toLowerCase() //tudo para minusculas
+
+	document.write(`Ola, <strong>${nome}</strong>! seu nome tem ${nome.length} letras</br>`);
+        document.write(`seu nome em maiusculas ${nome.toUpperCase()}</br>`);
+        document.write(`seu nome em minusculas ${nome.toLowerCase()}`);
+
+var n1 = 12345.5
+	document.write(n1.toFixed(2));
+	n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})
+
+
 
